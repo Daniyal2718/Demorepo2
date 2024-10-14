@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer with Animation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .social-media a {
+            display: inline-block;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .social-media a:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+        .social-media img {
+            height: 50px;
+        }
+        @media (max-width: 768px) {
+            .social-media {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        p {
+            text-align: center;
+            margin: 10px 0 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+     
+    <footer class="text-center mt-5 py-3">
+        <div class="container">
+            <div class="social-media mb-3">
+                <a href="https://twitter.com" target="_blank">
+                    <img src="free-twitter-logo-icon-2429-thumb.png" alt="Twitter">
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="facebook-icon-free-png.webp" alt="Facebook">
+                </a>
+            </div>
+            <p>&copy; 2024 D Jewels. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
